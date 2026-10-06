@@ -45,40 +45,6 @@
 - 项目不实现验证码、风控、签名、限流、平台登录或录屏限制绕过。
 - 请不要将 `local.properties`、Keystore、token、账号数据、抓屏图片、直播签名 URL 或设备日志提交到 Git。
 
-## 构建
-
-### Android Studio
-
-环境要求：JDK 17、Android SDK 35、Build Tools 35.0.0、Gradle 8.9、Android Gradle Plugin 8.7.3。
-
-```sh
-./gradlew :app:testDebugUnitTest :app:assembleDebug :app:lintDebug
-```
-
-APK 输出在 `app/build/outputs/apk/debug/app-debug.apk`。
-
-### Termux
-
-项目提供了 `scripts/build-termux.sh`。准备好 JDK 17、Gradle 8.9、Android SDK 35 和 Termux `aapt2` 后运行：
-
-```sh
-bash scripts/build-termux.sh :app:testDebugUnitTest :app:assembleDebug :app:lintDebug
-```
-
-`local.properties` 由本地环境生成，已经被 `.gitignore` 排除。发布版请自行维护签名密钥，禁止把密钥提交到仓库。
-
-## 验证状态
-
-当前开发版本为 `0.1.8`，`versionCode 9`。
-
-- 66 个 JVM 单元测试通过。
-- Android Lint：0 errors，16 warnings。
-- APK v2 签名验证通过。
-- 已在 ARM64 Android 设备上验证 Media3 播放、低延迟硬解选择和原生二维码识别路径。
-- 已验证四张公开游戏二维码样例的本地识别；这些样例不用于真实登录。
-
-本地测试不代表所有直播平台、网络环境、设备解码器或真实游戏登录流程都能成功。官方接口、二维码格式和直播平台策略可能随时变化。
-
 ## 已知限制
 
 以下能力不在项目承诺范围内：
@@ -101,7 +67,7 @@ bash scripts/build-termux.sh :app:testDebugUnitTest :app:assembleDebug :app:lint
 - `app/src/main/java/com/partner/mhyscanner/LiveResolver.java`：公开直播地址解析。
 - `app/src/main/java/com/partner/mhyscanner/ScreenCaptureService.java`：前台屏幕捕获。
 - `app/src/test/`：协议、二维码输入和取帧门控测试。
-- `scripts/`：Termux 构建、公开接口探测和本地样例工具。
+- `scripts/`：构建、公开接口探测和本地样例工具。
 - `docs/`：历史构建报告、低延迟调研和脱敏测试资料。
 
 ## 开源许可与致谢

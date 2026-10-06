@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.partner.mhyscanner'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    defaultConfig { applicationId 'com.partner.mhyscanner'; minSdk 26; targetSdk 35; versionCode 9; versionName '0.1.8' }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+    buildTypes { release { minifyEnabled false } }
+    testOptions { unitTests.returnDefaultValues = true }
+}
+dependencies {
+    implementation 'com.google.zxing:core:3.5.3'
+    implementation 'io.github.zxing-cpp:android:2.3.0'
+    implementation 'androidx.annotation:annotation:1.9.1'
+    implementation 'androidx.media3:media3-exoplayer:1.5.1'
+    implementation 'androidx.media3:media3-exoplayer-hls:1.5.1'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+}

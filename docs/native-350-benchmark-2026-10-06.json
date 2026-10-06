@@ -1,0 +1,157 @@
+{
+  "benchmark_only": true,
+  "login_requests": 0,
+  "model": "PKG110",
+  "sdk": 36,
+  "phase_ms": 25000,
+  "error": "",
+  "results": [
+    {
+      "mode": "baseline",
+      "codec": "c2.qti.avc.decoder",
+      "qr_engine": "ZXing Java",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 2642,
+      "codec_init_ms": 36,
+      "new_frames": 1199,
+      "analyzed_frames": 499,
+      "busy_skipped": 699,
+      "detected_qr_count": 0,
+      "rebuffers": 0,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 5.389792,
+      "capture_p95_ms": 9.235677,
+      "decode_p50_ms": 19.057709,
+      "decode_p95_ms": 31.077084,
+      "buffer_lead_p50_ms": 1216,
+      "buffer_lead_p95_ms": 1840,
+      "render_processing_offset_mean_ms": null
+    },
+    {
+      "mode": "optimized",
+      "codec": "c2.qti.avc.decoder.low_latency",
+      "qr_engine": "ZXing-C++",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 756,
+      "codec_init_ms": 64,
+      "new_frames": 1126,
+      "analyzed_frames": 608,
+      "busy_skipped": 517,
+      "detected_qr_count": 0,
+      "rebuffers": 0,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 5.803802,
+      "capture_p95_ms": 9.220469,
+      "decode_p50_ms": 9.710937,
+      "decode_p95_ms": 22.835573,
+      "buffer_lead_p50_ms": 541,
+      "buffer_lead_p95_ms": 607,
+      "render_processing_offset_mean_ms": null
+    },
+    {
+      "mode": "optimized",
+      "codec": "c2.qti.avc.decoder.low_latency",
+      "qr_engine": "ZXing-C++",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 776,
+      "codec_init_ms": 105,
+      "new_frames": 1181,
+      "analyzed_frames": 622,
+      "busy_skipped": 558,
+      "detected_qr_count": 0,
+      "rebuffers": 0,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 5.828542,
+      "capture_p95_ms": 9.41948,
+      "decode_p50_ms": 9.693385,
+      "decode_p95_ms": 23.734792,
+      "buffer_lead_p50_ms": 543,
+      "buffer_lead_p95_ms": 598,
+      "render_processing_offset_mean_ms": null
+    },
+    {
+      "mode": "baseline",
+      "codec": "c2.qti.avc.decoder",
+      "qr_engine": "ZXing Java",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 723,
+      "codec_init_ms": 52,
+      "new_frames": 1203,
+      "analyzed_frames": 437,
+      "busy_skipped": 766,
+      "detected_qr_count": 0,
+      "rebuffers": 1,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 5.856666,
+      "capture_p95_ms": 11.548593,
+      "decode_p50_ms": 28.25526,
+      "decode_p95_ms": 40.449167,
+      "buffer_lead_p50_ms": 1144,
+      "buffer_lead_p95_ms": 1776,
+      "render_processing_offset_mean_ms": 30.330333333333332
+    }
+  ],
+  "end_to_end_latency_measured": false,
+  "fixtures": [
+    {
+      "name": "bh3_qrcode_1080.png",
+      "reference_count": 1,
+      "reference_width": 1920,
+      "native_count": 1,
+      "native_width": 960,
+      "matches_reference": true
+    },
+    {
+      "name": "hk4e_qrcode_1080.png",
+      "reference_count": 1,
+      "reference_width": 1920,
+      "native_count": 1,
+      "native_width": 960,
+      "matches_reference": true
+    },
+    {
+      "name": "hkrpg_qrcode_1080.png",
+      "reference_count": 1,
+      "reference_width": 1920,
+      "native_count": 1,
+      "native_width": 960,
+      "matches_reference": true
+    },
+    {
+      "name": "zzz_qrcode_1440.png",
+      "reference_count": 1,
+      "reference_width": 2560,
+      "native_count": 1,
+      "native_width": 960,
+      "matches_reference": true
+    },
+    {
+      "name": "synthetic_multiple",
+      "passed": true
+    },
+    {
+      "name": "synthetic_rotated",
+      "passed": true
+    },
+    {
+      "name": "synthetic_inverted",
+      "passed": true
+    },
+    {
+      "name": "synthetic_center_crop",
+      "passed": true
+    }
+  ]
+}

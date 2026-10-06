@@ -1,0 +1,149 @@
+{
+  "benchmark_only": true,
+  "login_requests": 0,
+  "model": "PKG110",
+  "sdk": 36,
+  "phase_ms": 25000,
+  "error": "",
+  "results": [
+    {
+      "mode": "baseline",
+      "codec": "c2.qti.avc.decoder",
+      "qr_engine": "ZXing Java",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 766,
+      "codec_init_ms": 62,
+      "new_frames": 1265,
+      "analyzed_frames": 506,
+      "busy_skipped": 758,
+      "detected_qr_count": 0,
+      "rebuffers": 0,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 5.405938,
+      "capture_p95_ms": 10.270834,
+      "decode_p50_ms": 20.58625,
+      "decode_p95_ms": 35.212448,
+      "buffer_lead_p50_ms": 1302,
+      "buffer_lead_p95_ms": 2285,
+      "render_processing_offset_mean_ms": null
+    },
+    {
+      "mode": "optimized",
+      "codec": "c2.qti.avc.decoder.low_latency",
+      "qr_engine": "ZXing-C++",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 793,
+      "codec_init_ms": 49,
+      "new_frames": 1343,
+      "analyzed_frames": 705,
+      "busy_skipped": 637,
+      "detected_qr_count": 0,
+      "rebuffers": 0,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 5.627552,
+      "capture_p95_ms": 8.1925,
+      "decode_p50_ms": 8.684375,
+      "decode_p95_ms": 20.576614,
+      "buffer_lead_p50_ms": 627,
+      "buffer_lead_p95_ms": 755,
+      "render_processing_offset_mean_ms": null
+    },
+    {
+      "mode": "optimized",
+      "codec": "c2.qti.avc.decoder.low_latency",
+      "qr_engine": "ZXing-C++",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 685,
+      "codec_init_ms": 67,
+      "new_frames": 1247,
+      "analyzed_frames": 683,
+      "busy_skipped": 563,
+      "detected_qr_count": 0,
+      "rebuffers": 0,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 5.718281,
+      "capture_p95_ms": 8.758698,
+      "decode_p50_ms": 8.600938,
+      "decode_p95_ms": 18.706667,
+      "buffer_lead_p50_ms": 599,
+      "buffer_lead_p95_ms": 709,
+      "render_processing_offset_mean_ms": null
+    },
+    {
+      "mode": "baseline",
+      "codec": "c2.qti.avc.decoder",
+      "qr_engine": "ZXing Java",
+      "width": 1920,
+      "height": 1080,
+      "first_frame_ms": 718,
+      "codec_init_ms": 74,
+      "new_frames": 1125,
+      "analyzed_frames": 423,
+      "busy_skipped": 701,
+      "detected_qr_count": 0,
+      "rebuffers": 0,
+      "dropped_frames": 0,
+      "thermal_start": 0,
+      "thermal_end": 0,
+      "capture_p50_ms": 6.133906,
+      "capture_p95_ms": 11.485,
+      "decode_p50_ms": 28.439739,
+      "decode_p95_ms": 38.642552,
+      "buffer_lead_p50_ms": 1374,
+      "buffer_lead_p95_ms": 2034,
+      "render_processing_offset_mean_ms": null
+    }
+  ],
+  "end_to_end_latency_measured": false,
+  "fixtures": [
+    {
+      "name": "bh3_qrcode_1080.png",
+      "reference_count": 1,
+      "native_count": 1,
+      "matches_reference": true
+    },
+    {
+      "name": "hk4e_qrcode_1080.png",
+      "reference_count": 0,
+      "native_count": 1,
+      "matches_reference": false
+    },
+    {
+      "name": "hkrpg_qrcode_1080.png",
+      "reference_count": 0,
+      "native_count": 1,
+      "matches_reference": false
+    },
+    {
+      "name": "zzz_qrcode_1440.png",
+      "reference_count": 1,
+      "native_count": 1,
+      "matches_reference": true
+    },
+    {
+      "name": "synthetic_multiple",
+      "passed": true
+    },
+    {
+      "name": "synthetic_rotated",
+      "passed": true
+    },
+    {
+      "name": "synthetic_inverted",
+      "passed": true
+    },
+    {
+      "name": "synthetic_center_crop",
+      "passed": true
+    }
+  ]
+}

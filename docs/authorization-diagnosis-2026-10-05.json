@@ -1,0 +1,12 @@
+{
+  "community_authorization_retcode": 0,
+  "account_id_matched": true,
+  "legacy_exchange_retcode": -1,
+  "legacy_upstream_decode_error": true,
+  "passport_exchange_retcode": 1001,
+  "passport_safe_reason": "操作过于频繁",
+  "game_token_saved": false,
+  "live_api_redefinition_retcode": 0,
+  "live_local_cooldown_set": true,
+  "game_login_confirm_requests": 0
+}
